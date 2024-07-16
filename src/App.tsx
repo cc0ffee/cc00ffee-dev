@@ -1,6 +1,7 @@
+import Card from './components/Card';
 function App() {
   return <div className="flex items-center justify-center">
-    <h1 className="text-3xl font-bold">Under Construction!</h1>
+    <Card/>
   </div>
 }
 export default App;

@@ -1,0 +1,27 @@
+import PFP from '../assets/pfp.png';
+import { useState } from 'react';
+function Card() {
+
+    let indexNum = 0;
+    const userArray: string[] = ["cc00ffee!", "0xCC00FFEE!", "3422617582!", "sizeof(cc00ffee)!", 'echo "cc00ffee!"'];
+    const [index, setIndex] = useState<number>(0);
+    function handleUserFormat() {
+        indexNum += 1;
+        setIndex((index + 1) % userArray.length);
+    }
+
+    return <div className='flex items-start space-x-4 mt-32'>
+        <img className='rounded-lg size-40' src={ PFP }/>
+        <div>
+            <h1 className="text-3xl font-bold">Hi! I'm <button onClick={ handleUserFormat }>{ userArray[index] }</button></h1>
+            <br/>
+            <p className="text-xl font-semibold">I study Computer Science, interest in low-level security!<br/>I love playing CTFs! You can view my writeups here.</p>
+            <div className="flex items-start space-x-8 mt-4 font-medium">
+                <span>Discord: cc00ffee</span>
+                <a href="https://twitter.com/_cc00ffee">Twitter</a>
+                <a href="https://github.com/cc0ffee">GitHub</a>
+            </div>
+        </div>
+    </div>
+}
+export default Card;
