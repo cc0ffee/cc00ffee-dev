@@ -10,7 +10,7 @@ function ProjectCard(props: {image: any, title: string, languages: string, descr
                     <span>{props.isPersonal ? 'Personal' : 'Academic'}</span>
                     {props.link && 
                         <a href={props.link} className="text-blue-500 hover:text-blue-400">
-                            Github →
+                            Learn More →
                         </a>
                     }
                 </div>

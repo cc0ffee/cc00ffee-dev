@@ -1,4 +1,5 @@
+import WriteupCard from '../components/WriteupCard';
 function Writeups() {
-    return <div><h1>Writeups</h1></div>
+    return <div><WriteupCard/></div>
 }
 export default Writeups;
