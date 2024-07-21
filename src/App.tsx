@@ -1,7 +1,23 @@
 import Card from './components/Card';
+import NavBar from './components/Navbar';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Writeups from './pages/Writeups';
+import Photography from './pages/Photography';
+import { Route, Routes } from 'react-router-dom';
+
 function App() {
-  return <div className="flex items-center justify-center">
+  return <div className="flex flex-col items-center">
     <Card/>
+    <NavBar/>
+    <div>
+      <Routes>
+        <Route path="/" element={<Projects/>}/>
+        <Route path="/projects" element={<Projects/>}/>
+        <Route path="/writeups" element={<Writeups/>}/>
+        <Route path="/photography" element={<Photography/>}/>
+      </Routes>
+    </div>
   </div>
 }
 export default App;
