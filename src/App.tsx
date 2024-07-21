@@ -1,6 +1,6 @@
 import Card from './components/Card';
 import NavBar from './components/Navbar';
-import Home from './pages/Home';
+// import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Writeups from './pages/Writeups';
 import Photography from './pages/Photography';
