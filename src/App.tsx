@@ -7,7 +7,7 @@ import Writeups from './pages/Writeups';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
-  return <div className="flex flex-col items-center">
+  return <div className="flex flex-col items-center m-6 sm:m-0">
     <Card/>
     <NavBar/>
     <div>

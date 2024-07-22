@@ -10,8 +10,8 @@ function Card() {
         setIndex((index + 1) % userArray.length);
     }
 
-    return <div className='flex items-start space-x-4 mt-16'>
-        <img className='rounded-lg size-40' src={ PFP }/>
+    return <div className='flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-4 mt-16'>
+        <img className='rounded-lg size-40 sm:mb-0 mb-12' src={ PFP }/>
         <div>
             <h1 className="text-3xl font-bold">Hi! I'm <button onClick={ handleUserFormat }><code className="bg-gray-100 p-1 rounded">{ userArray[index] }</code></button></h1>
             <br/>

@@ -108,7 +108,7 @@ function Projects() {
                         link={project.link}
                     />
                 ))}
-            <div className="flex justify-start items-center mt-4 mb-10">
+            <div className="flex justify-center sm:justify-start items-center mt-4 mb-10">
                 <button onClick={handlePreviousPage} disabled={currentPage === 1}> ← </button>
                 <span className="pl-4 pr-4"> {currentPage} / {totalPages} </span>
                 <button onClick={handleNextPage} disabled={currentPage === totalPages}> → </button>
