@@ -13,9 +13,9 @@ function Card() {
     return <div className='flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-4 mt-16'>
         <img className='rounded-lg size-40 sm:mb-0 mb-12' src={ PFP }/>
         <div>
-            <h1 className="text-3xl font-bold">Hi! I'm <button onClick={ handleUserFormat }><code className="bg-gray-100 p-1 rounded">{ userArray[index] }</code></button></h1>
+            <h1 className="text-3xl font-bold">Hi! I'm <button onClick={ handleUserFormat }><code className="bg-gray-100 dark:bg-gray-600 p-1 rounded">{ userArray[index] }</code></button></h1>
             <br/>
-            <p className="text-xl font-semibold">I study Computer Science in 🏙️<code className="bg-gray-100 p-1 rounded">Chicago</code>!<br/>I love playing CTFs! You can view my writeups here.</p>
+            <p className="text-xl font-semibold">I study Computer Science in 🏙️<code className="bg-gray-100 dark:bg-gray-600 p-1 rounded">Chicago</code>!<br/>I love playing CTFs! You can view my writeups here.</p>
             <div className="flex items-start space-x-8 mt-4 font-medium">
                 <span>Discord: cc00ffee</span>
                 <a href="https://twitter.com/_cc00ffee">Twitter</a>
