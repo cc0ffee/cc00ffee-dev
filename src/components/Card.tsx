@@ -5,7 +5,7 @@ function Card() {
     let indexNum = 0;
     let locIndexNum = 0;
     const userArray: string[] = ["cc00ffee!", "0xCC00FFEE!", "3422617582!", "sizeof(cc00ffee)!", 'echo "cc00ffee!"'];
-    const locationArray: string[] = ["Chicago!", "41°52′55″N 87°37′40″W!", "The Windy City!"]
+    const locationArray: string[] = ["Chicago!", "41.884°N 87.633°W!", "The Windy City!"]
     const [index, setIndex] = useState<number>(0);
     const [locIndex, setLocIndex] = useState<number>(0);
     function handleUserFormat() {
