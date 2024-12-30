@@ -1,9 +1,9 @@
 import ProjectCard from "../components/ProjectCard";
 import CoffeeDevImage from '../assets/coffeedev.png';
+import CompilerImage from '../assets/compiler.png';
 import BattleshipsImage from '../assets/battleships.png';
 import OsDevImage from '../assets/osdev.png';
 import FumoImage from '../assets/fumo.png';
-import InterpreterImage from '../assets/interpreter.png';
 import DominoImage from '../assets/domino.png';
 import AppImage from '../assets/iitapp.png';
 import { useState } from 'react';
@@ -16,6 +16,14 @@ const projects = [
         description: "cc00ffee's personal corner of the internet! Hosts my interests/hobbies alongside writeups for CTFs.",
         isPersonal: true,
         link: "https://github.com/cc0ffee/cc00ffee-dev"
+    },
+    {
+        image: CompilerImage,
+        title: "ML & C to RISC-V Compiler",
+        languages: "OCaml, LLVM",
+        description: "Implementation of IR, Closure Conv., and Code Generation with compiler optimizations to perform ML or C code to RISC-V Assembly.",
+        isPersonal: false,
+        link: ""
     },
     {
         image: "https://i.pinimg.com/736x/a1/2c/c3/a12cc3de1982560bb0f8317adc818494.jpg",
@@ -31,7 +39,7 @@ const projects = [
         languages: "Dart, Flutter",
         description: "Minimal design version of Battleships versing other students. Interacts with an API to send and receive unique game data.",
         isPersonal: false,
-        link: ""
+        link: "https://github.com/cc0ffee/flutter-battleships"
     },
     {
         image: OsDevImage,
@@ -64,14 +72,6 @@ const projects = [
         description: "A Proof of Concept app for mobile devices that allows students to check their schedule and assignments.",
         isPersonal: false,
         link: "https://github.com/cc0ffee/iitapp"
-    },
-    {
-        image: InterpreterImage,
-        title: "Interpreter",
-        languages: "Racket",
-        description: "An interpreter implementing language constructs, 'syntactic sugar', and define form that supports recursion.",
-        isPersonal: false,
-        link: ""
     },
 ];
 
