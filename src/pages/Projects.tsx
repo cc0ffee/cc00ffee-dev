@@ -10,12 +10,12 @@ import { useState } from 'react';
 
 const projects = [
     {
-        image: CoffeeDevImage,
-        title: "cc00ffee.dev",
-        languages: "Typescript, React, Tailwind",
-        description: "cc00ffee's personal corner of the internet! Hosts my interests/hobbies alongside writeups for CTFs.",
-        isPersonal: true,
-        link: "https://github.com/cc0ffee/cc00ffee-dev"
+        image: "",
+        title: "Greenhouse Temperature Modeling",
+        languages: "Python, Go, Next.js, Redis",
+        description: "Model of internal temperatures for testing structures and insulation, delivered on a web interface for accessbility.",
+        isPersonal: false,
+        link: "https://github.com/cc0ffee/greensim"
     },
     {
         image: CompilerImage,
@@ -23,7 +23,7 @@ const projects = [
         languages: "OCaml, LLVM",
         description: "Implementation of IR, Closure Conv., and Code Generation with compiler optimizations to perform ML or C code to RISC-V Assembly.",
         isPersonal: false,
-        link: ""
+        link: "https://github.com/cc0ffee/ML2RISCV-compiler"
     },
     {
         image: "https://i.pinimg.com/736x/a1/2c/c3/a12cc3de1982560bb0f8317adc818494.jpg",
@@ -31,7 +31,7 @@ const projects = [
         languages: "C, VitaSDK",
         description: "PSVita's own neofetch! Displays system information with ASCII image of your choice to make it your own!",
         isPersonal: true,
-        link: ""
+        link: "https://github.com/cc0ffee/vitafetch"
     },
     {
         image: BattleshipsImage,
@@ -40,14 +40,6 @@ const projects = [
         description: "Minimal design version of Battleships versing other students. Interacts with an API to send and receive unique game data.",
         isPersonal: false,
         link: "https://github.com/cc0ffee/flutter-battleships"
-    },
-    {
-        image: OsDevImage,
-        title: "threaded OS development",
-        languages: "C",
-        description: "Modified research OS to enable threading, scheduling, and user programs with new system calls.",
-        isPersonal: false,
-        link: ""
     },
     {
         image: FumoImage,
