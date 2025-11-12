@@ -2,7 +2,7 @@ import ProjectCard from "../components/ProjectCard";
 import CoffeeDevImage from '../assets/coffeedev.png';
 import CompilerImage from '../assets/compiler.png';
 import BattleshipsImage from '../assets/battleships.png';
-import OsDevImage from '../assets/osdev.png';
+// import OsDevImage from '../assets/osdev.png';
 import FumoImage from '../assets/fumo.png';
 import DominoImage from '../assets/domino.png';
 import AppImage from '../assets/iitapp.png';
@@ -10,7 +10,7 @@ import { useState } from 'react';
 
 const projects = [
     {
-        image: "",
+        image: CoffeeDevImage,
         title: "Greenhouse Temperature Modeling",
         languages: "Python, Go, Next.js, Redis",
         description: "Model of internal temperatures for testing structures and insulation, delivered on a web interface for accessbility.",
