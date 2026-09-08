@@ -1,4 +1,5 @@
 import ProjectCard from "../components/ProjectCard";
+import NESImage from '../assets/nes.png';
 import CoffeeDevImage from '../assets/coffeedev.png';
 import CompilerImage from '../assets/compiler.png';
 import BattleshipsImage from '../assets/battleships.png';
@@ -9,6 +10,14 @@ import AppImage from '../assets/iitapp.png';
 import { useState } from 'react';
 
 const projects = [
+    {
+        image: NESImage,
+        title: "NESpresso,
+        languages: "C++, SDL2",
+        description: "Cross-platform NES emulator, getting more games working overtime!",
+        isPersonal: true,
+        link: "https://github.com/cc0ffee/NESpresso"
+    },
     {
         image: CoffeeDevImage,
         title: "Greenhouse Temperature Modeling",
