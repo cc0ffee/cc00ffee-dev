@@ -12,7 +12,7 @@ import { useState } from 'react';
 const projects = [
     {
         image: NESImage,
-        title: "NESpresso,
+        title: "NESpresso",
         languages: "C++, SDL2",
         description: "Cross-platform NES emulator, getting more games working overtime!",
         isPersonal: true,
